@@ -58,6 +58,7 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setAudioOnly(false)
                             .setUserInfo(_userInfo)
                             .setAudioMuted(false)
+                            .setFeatureFlag("live-streaming.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
